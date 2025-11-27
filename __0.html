@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="zh_TW">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="exe_lightbox.css" />
+<link rel="stylesheet" type="text/css" href="exe_effects.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>教學內容 | 20251120 </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="123" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 Portable - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="exe_lightbox.js"></script>
+<script type="text/javascript" src="exe_effects.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-4"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">跳過導覽</a></p>
+<header id="header" ><div id="headerContent">20251120</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">首頁</a></li>
+   <li class="current-page-parent"><a href="_.html" class="current-page-parent daddy">第一單元 數位教材製作</a>
+   <ul>
+      <li><a href="__.html" class="no-ch">教學目標</a></li>
+      <li id="active"><a href="__0.html" class="active no-ch">教學內容</a></li>
+      <li><a href="__1.html" class="no-ch">測驗卷</a></li>
+   </ul>
+   </li>
+   <li><a href="_0.html" class="no-ch">第二單元 教材製作工具</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="__.html" class="prev"><span><span>&laquo; </span>前一頁</span></a> <span class="sep">| </span><a href="__1.html" class="next"><span>下一頁<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">教學內容</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id3">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">日曆</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta3_135_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: center;"></p>
+<style>
+        /*
+         * --- CSS 樣式開始 ---
+         */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f9;
+            margin: 0;
+        }
+
+        .calendar-container {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 350px;
+        }
+
+        .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .calendar-header button {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #333;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+
+        .calendar-header button:hover {
+            background-color: #eee;
+        }
+
+        #current-month-year {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #2a6496;
+        }
+
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 5px;
+            text-align: center;
+        }
+
+        .day-name {
+            font-weight: bold;
+            padding: 10px 0;
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        /* 星期日用紅色標註 */
+        .day-name:first-child {
+            color: #e74c3c;
+        }
+
+        .date-cell {
+            padding: 10px 0;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: background-color 0.2s, color 0.2s;
+            font-size: 1rem;
+        }
+
+        .date-cell:not(.empty):hover {
+            background-color: #e0f7fa;
+        }
+
+        .today {
+            background-color: #2a6496 !important;
+            color: white;
+            font-weight: bold;
+        }
+
+        .date-cell.empty {
+            visibility: hidden;
+            cursor: default;
+        }
+
+        /*
+         * --- CSS 樣式結束 ---
+         */
+    </style>
+<div class="calendar-container" style="text-align: center;">
+<div class="calendar-header"><button id="prev-btn">&lt;</button> <span id="current-month-year"></span> <button id="next-btn">&gt;</button></div>
+<div class="calendar-grid" id="calendar-grid">
+<div class="day-name">日</div>
+<div class="day-name">一</div>
+<div class="day-name">二</div>
+<div class="day-name">三</div>
+<div class="day-name">四</div>
+<div class="day-name">五</div>
+<div class="day-name">六</div>
+</div>
+</div>
+<p style="text-align: center;">
+<script>
+        /*
+         * --- JavaScript 程式碼開始 ---
+         */
+        const monthYearEl = document.getElementById('current-month-year');
+        const calendarGridEl = document.getElementById('calendar-grid');
+        const prevBtn = document.getElementById('prev-btn');
+        const nextBtn = document.getElementById('next-btn');
+
+        // 初始化日期為今天
+        let currentDate = new Date();
+        let currentYear = currentDate.getFullYear();
+        let currentMonth = currentDate.getMonth(); // 0-11
+
+        // 函數：渲染日曆
+        function renderCalendar() {
+            // 1. 清空舊的日期單元格 (保留星期名稱)
+            // 假設 calendarGridEl 包含 7 個 day-name div
+            while (calendarGridEl.children.length > 7) {
+                calendarGridEl.removeChild(calendarGridEl.lastChild);
+            }
+
+            // 2. 設定標題 (月份和年份)
+            const monthNames = ["一月", "二月", "三月", "四月", "五月", "六月",
+                                "七月", "八月", "九月", "十月", "十一月", "十二月"];
+            monthYearEl.textContent = `${currentYear} 年 ${monthNames[currentMonth]}`;
+
+            // 3. 計算月份的第一天和總天數
+            const firstDayOfMonth = new Date(currentYear, currentMonth, 1).getDay(); // 0 (日) - 6 (六)
+            const daysInMonth = new Date(currentYear, currentMonth + 1, 0).getDate();
+
+            // 4. 取得今天的日期 (用於標註)
+            const today = new Date();
+            const todayDate = today.getDate();
+            const todayMonth = today.getMonth();
+            const todayYear = today.getFullYear();
+
+            // 5. 填入開頭的空白單元格
+            for (let i = 0; i < firstDayOfMonth; i++) {
+                const emptyCell = document.createElement('div');
+                emptyCell.classList.add('date-cell', 'empty');
+                calendarGridEl.appendChild(emptyCell);
+            }
+
+            // 6. 填入日期單元格
+            for (let date = 1; date <= daysInMonth; date++) {
+                const dateCell = document.createElement('div');
+                dateCell.classList.add('date-cell');
+                dateCell.textContent = date;
+
+                // 檢查是否是今天
+                if (date === todayDate && currentMonth === todayMonth && currentYear === todayYear) {
+                    dateCell.classList.add('today');
+                }
+
+                // 添加事件處理器 (可選：點擊日期時的動作)
+                dateCell.addEventListener('click', () => {
+                    alert(`您點擊了 ${currentYear} 年 ${currentMonth + 1} 月 ${date} 日`);
+                });
+
+                calendarGridEl.appendChild(dateCell);
+            }
+        }
+
+        // 函數：切換到上一個月
+        function prevMonth() {
+            currentMonth--;
+            if (currentMonth < 0) {
+                currentMonth = 11;
+                currentYear--;
+            }
+            renderCalendar();
+        }
+
+        // 函數：切換到下一個月
+        function nextMonth() {
+            currentMonth++;
+            if (currentMonth > 11) {
+                currentMonth = 0;
+                currentYear++;
+            }
+            renderCalendar();
+        }
+
+        // 監聽按鈕事件
+        prevBtn.addEventListener('click', prevMonth);
+        nextBtn.addEventListener('click', nextMonth);
+
+        // 初始化：第一次渲染日曆
+        renderCalendar();
+
+        /*
+         * --- JavaScript 程式碼結束 ---
+         */
+    </script>
+</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper CasestudyIdevice em_iDevice em_iDevice_casestudy" id="id1">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">案例分析</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta1_106" class="block iDevice_content">
+<p><a title="故事起源" class="exe-dialog-link" rel="lightbox" href="#t4b5934a6-91cd-9dce-a11a-4bad0642a2b2" id="link4b5934a6-91cd-9dce-a11a-4bad0642a2b2">故事的起源</a></p>
+<div id="t4b5934a6-91cd-9dce-a11a-4bad0642a2b2" class="exe-dialog-text js-hidden"><center><iframe width="280" height="157" src="https://www.youtube.com/embed/NvH5_rGTGFI?si=ykTZypwMBaoKdcF_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="allowfullscreen"></iframe></center>
+<h3>這是一段影片，教授教育心理學</h3>
+</div>
+</section>
+<section id="taquesQuestion0b1" class="block iDevice_content">
+<h1>學習活動</h1>
+<div class="exe-fx exe-accordion">
+<h1></h1>
+<h2>活動1</h2>
+<p>在這裡寫您的內容...</p>
+<h2>活動2</h2>
+<p>在這裡寫您的內容...</p>
+<h2>活動3</h2>
+<p>這是活動3</p>
+<p></p>
+<h2>活動4</h2>
+<p>這是活動4</p>
+</div>
+</section>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>授權條款為</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC 授權 -- 相同方式分享條款 4.0 版</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="__.html" class="prev"><span><span>&laquo; </span>前一頁</span></a> <span class="sep">| </span><a href="__1.html" class="next"><span>下一頁<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>使用 eXeLearning 製作<span> (新視窗)</span></span></a></p><script type="text/javascript" src="_intef_js.js"></script></body></html>
